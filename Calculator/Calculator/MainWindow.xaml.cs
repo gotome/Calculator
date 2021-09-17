@@ -35,12 +35,12 @@ namespace Calculator
       if (String.IsNullOrEmpty(operation))
       {
         num1 = (num1 * 10);
-        TxtBxResult.Text = num1.ToString();
+        txtBxResult.Text = num1.ToString();
       }
       else
       {
         num2 = (num2 * 10);
-        TxtBxResult.Text = num2.ToString();
+        txtBxResult.Text = num2.ToString();
       }
     }
 
@@ -49,12 +49,12 @@ namespace Calculator
       if (String.IsNullOrEmpty(operation))
       {
         num1 = (num1 * 10) + 1;
-        TxtBxResult.Text = num1.ToString();
+        txtBxResult.Text = num1.ToString();
       }
       else
       {
         num2 = (num2 * 10) + 1;
-        TxtBxResult.Text = num2.ToString();
+        txtBxResult.Text = num2.ToString();
       }
     }
 
@@ -63,12 +63,12 @@ namespace Calculator
       if (String.IsNullOrEmpty(operation))
       {
         num1 = (num1 * 10) + 2;
-        TxtBxResult.Text = num1.ToString();
+        txtBxResult.Text = num1.ToString();
       }
       else
       {
         num2 = (num2 * 10) + 2;
-        TxtBxResult.Text = num2.ToString();
+        txtBxResult.Text = num2.ToString();
       }
     }
 
@@ -77,12 +77,12 @@ namespace Calculator
       if (String.IsNullOrEmpty(operation))
       {
         num1 = (num1 * 10) + 3;
-        TxtBxResult.Text = num1.ToString();
+        txtBxResult.Text = num1.ToString();
       }
       else
       {
         num2 = (num2 * 10) + 3;
-        TxtBxResult.Text = num2.ToString();
+        txtBxResult.Text = num2.ToString();
       }
     }
 
@@ -91,12 +91,12 @@ namespace Calculator
       if (String.IsNullOrEmpty(operation))
       {
         num1 = (num1 * 10) + 4;
-        TxtBxResult.Text = num1.ToString();
+        txtBxResult.Text = num1.ToString();
       }
       else
       {
         num2 = (num2 * 10) + 4;
-        TxtBxResult.Text = num2.ToString();
+        txtBxResult.Text = num2.ToString();
       }
     }
 
@@ -105,12 +105,12 @@ namespace Calculator
       if (String.IsNullOrEmpty(operation))
       {
         num1 = (num1 * 10) + 5;
-        TxtBxResult.Text = num1.ToString();
+        txtBxResult.Text = num1.ToString();
       }
       else
       {
         num2 = (num2 * 10) + 5;
-        TxtBxResult.Text = num2.ToString();
+        txtBxResult.Text = num2.ToString();
       }
     }
 
@@ -119,12 +119,12 @@ namespace Calculator
       if (String.IsNullOrEmpty(operation))
       {
         num1 = (num1 * 10) + 6;
-        TxtBxResult.Text = num1.ToString();
+        txtBxResult.Text = num1.ToString();
       }
       else
       {
         num2 = (num2 * 10) + 6;
-        TxtBxResult.Text = num2.ToString();
+        txtBxResult.Text = num2.ToString();
       }
     }
 
@@ -133,12 +133,12 @@ namespace Calculator
       if (String.IsNullOrEmpty(operation))
       {
         num1 = (num1 * 10) + 7;
-        TxtBxResult.Text = num1.ToString();
+        txtBxResult.Text = num1.ToString();
       }
       else
       {
         num2 = (num2 * 10) + 7;
-        TxtBxResult.Text = num2.ToString();
+        txtBxResult.Text = num2.ToString();
       }
     }
 
@@ -147,12 +147,12 @@ namespace Calculator
       if (String.IsNullOrEmpty(operation))
       {
         num1 = (num1 * 10) + 8;
-        TxtBxResult.Text = num1.ToString();
+        txtBxResult.Text = num1.ToString();
       }
       else
       {
         num2 = (num2 * 10) + 8;
-        TxtBxResult.Text = num2.ToString();
+        txtBxResult.Text = num2.ToString();
       }
     }
 
@@ -161,12 +161,12 @@ namespace Calculator
       if (String.IsNullOrEmpty(operation))
       {
         num1 = (num1 * 10) + 9;
-        TxtBxResult.Text = num1.ToString();
+        txtBxResult.Text = num1.ToString();
       }
       else
       {
         num2 = (num2 * 10) + 9;
-        TxtBxResult.Text = num2.ToString();
+        txtBxResult.Text = num2.ToString();
       }
     }
 
@@ -175,7 +175,7 @@ namespace Calculator
       num1 = 0;
       num2 = 0;
       operation = String.Empty;
-      TxtBxResult.Text = num1.ToString();
+      txtBxResult.Text = num1.ToString();
     }
 
     private void btnCE_Click(object sender, RoutedEventArgs e)
@@ -183,13 +183,12 @@ namespace Calculator
       if (String.IsNullOrEmpty(operation))
       {
         num1 = 0;
-
       }
       else
       {
         num2 = 0;
       }
-      TxtBxResult.Text = String.Empty;
+      txtBxResult.Text = 0.ToString();
     }
 
     private void btnDel_Click(object sender, RoutedEventArgs e)
@@ -197,32 +196,80 @@ namespace Calculator
       if (String.IsNullOrEmpty(operation))
       {
         num1 = (num1 / 10);
-        TxtBxResult.Text = num1.ToString();
+        txtBxResult.Text = num1.ToString();
       }
       else
       {
         num2 = (num2 / 10);
-        TxtBxResult.Text = num2.ToString();
+        txtBxResult.Text = num2.ToString();
       }
     }
 
-    private void plsMinBtn_Click(object sender, RoutedEventArgs e)
+    private void btnPlsMin_Click(object sender, RoutedEventArgs e)
     {
       if (String.IsNullOrEmpty(operation))
       {
         num1 *= -1;
-        TxtBxResult.Text = num1.ToString();
+        txtBxResult.Text = num1.ToString();
       }
       else
       {
         num2 *= -1;
-        TxtBxResult.Text = num2.ToString();
+        txtBxResult.Text = num2.ToString();
       }
     }
 
-    private void clcBtn_Click(object sender, RoutedEventArgs e)
+    private void btnClc_Click(object sender, RoutedEventArgs e)
     {
+      switch (operation)
+      {
+        case "/":
+          num1 /= num2; 
+          txtBxResult.Text = num1.ToString();
+          break;
+        case "*":
+          num1 *= num2;
+          txtBxResult.Text = num1.ToString();
+          break;
+        case "-":
+          num1 -= num2;
+          txtBxResult.Text = num1.ToString();
+          break;
+        case "+":
+          num1 += num2;
+          txtBxResult.Text = num1.ToString();
+          break;
+        default:
+          break;
+      }
+    }
 
+    private void btnDiv_Click(object sender, RoutedEventArgs e)
+    {
+      operation = "/";
+      num2 = 0; 
+      txtBxResult.Text = 0.ToString();
+    }
+
+    private void btnMul_Click(object sender, RoutedEventArgs e)
+    {
+      operation = "*";
+      num2 = 0;
+      txtBxResult.Text = 0.ToString();
+    }
+
+    private void btnMin_Click(object sender, RoutedEventArgs e)
+    {
+      operation = "-";
+      num2 = 0;
+      txtBxResult.Text = 0.ToString();
+    }
+
+    private void btnPls_Click(object sender, RoutedEventArgs e)
+    {
+      operation = "+";
+      num2 = 0;
+      txtBxResult.Text = 0.ToString();
     }
   }
 }

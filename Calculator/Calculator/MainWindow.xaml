@@ -89,62 +89,69 @@
 
         <!--  Delete Buttons  -->
         <Button
-            x:Name="CeBtn"
+            x:Name="BtnCE"
             Grid.Row="1"
             Grid.Column="0"
+            Click="btnCE_Click"
             Content="CE" />
         <Button
-            x:Name="CBtn"
+            x:Name="BtnC"
             Grid.Row="1"
             Grid.Column="1"
+            Click="btnC_Click"
             Content="C" />
         <Button
-            x:Name="DelBtn"
+            x:Name="BtnDel"
             Grid.Row="1"
             Grid.Column="2"
+            Click="btnDel_Click"
             Content="DEL" />
 
         <!--  Math Buttons  -->
         <Button
-            x:Name="PlsBtn"
+            x:Name="Btnpls"
             Grid.Row="4"
             Grid.Column="3"
+            Click="btnPls_Click"
             Content="+" />
         <Button
-            x:Name="MinBtn"
+            x:Name="BtnMin"
             Grid.Row="3"
             Grid.Column="3"
+            Click="btnMin_Click"
             Content="-" />
         <Button
-            x:Name="MulBtn"
+            x:Name="BtnMul"
             Grid.Row="2"
             Grid.Column="3"
+            Click="btnMul_Click"
             Content="*" />
         <Button
-            x:Name="divBtn"
+            x:Name="BtnDiv"
             Grid.Row="1"
             Grid.Column="3"
+            Click="btnDiv_Click"
             Content="/" />
 
         <!--  Plus/Minus Button  -->
         <Button
-            x:Name="plsMinBtn"
+            x:Name="BtnPlsMin"
             Grid.Row="5"
             Grid.Column="0"
-            Click="plsMinBtn_Click"
+            Click="btnPlsMin_Click"
             Content="+/-" />
 
         <!--  Calculate Button  -->
         <Button
-            x:Name="clcBtn"
+            x:Name="BtnClc"
             Grid.Row="5"
             Grid.Column="3"
-            Click="clcBtn_Click"
+            Click="btnClc_Click"
             Content="=" />
 
         <!--  Result Text Box  -->
         <TextBox
-            x:Name="TxtBxResult"
+            x:Name="txtBxResult"
             Grid.Row="0"
             Grid.Column="0"
             Grid.ColumnSpan="4"
