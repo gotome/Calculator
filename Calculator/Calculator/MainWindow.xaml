@@ -9,14 +9,15 @@
     Width="450"
     Height="600"
     mc:Ignorable="d">
+
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
@@ -31,107 +32,138 @@
             Grid.Row="5"
             Grid.Column="1"
             Click="btn0_Click"
-            Content="0" />
+            Content="0"
+            FontSize="18" />
         <Button
             x:Name="btn1"
             Grid.Row="4"
             Grid.Column="0"
             Click="btn1_Click"
-            Content="1" />
+            Content="1"
+            FontSize="18" />
         <Button
             x:Name="btn2"
             Grid.Row="4"
             Grid.Column="1"
             Click="btn2_Click"
-            Content="2" />
+            Content="2"
+            FontSize="18" />
         <Button
             x:Name="btn3"
             Grid.Row="4"
             Grid.Column="2"
             Click="btn3_Click"
-            Content="3" />
+            Content="3"
+            FontSize="18" />
         <Button
             x:Name="btn4"
             Grid.Row="3"
             Grid.Column="0"
             Click="btn4_Click"
-            Content="4" />
+            Content="4"
+            FontSize="18" />
         <Button
             x:Name="btn5"
             Grid.Row="3"
             Grid.Column="1"
             Click="btn5_Click"
-            Content="5" />
+            Content="5"
+            FontSize="18" />
         <Button
             x:Name="btn6"
             Grid.Row="3"
             Grid.Column="2"
             Click="btn6_Click"
-            Content="6" />
+            Content="6"
+            FontSize="18" />
         <Button
             x:Name="btn7"
             Grid.Row="2"
             Grid.Column="0"
             Click="btn7_Click"
-            Content="7" />
+            Content="7"
+            FontSize="18" />
         <Button
             x:Name="btn8"
             Grid.Row="2"
             Grid.Column="1"
             Click="btn8_Click"
-            Content="8" />
+            Content="8"
+            FontSize="18" />
         <Button
             x:Name="btn9"
             Grid.Row="2"
             Grid.Column="2"
             Click="btn9_Click"
-            Content="9" />
+            Content="9"
+            FontSize="18" />
 
         <!--  Delete Buttons  -->
         <Button
             x:Name="BtnCE"
             Grid.Row="1"
             Grid.Column="0"
+            Background="#B2FF0000"
+            BorderBrush="Black"
             Click="btnCE_Click"
-            Content="CE" />
+            Content="CE"
+            FontSize="18" />
         <Button
             x:Name="BtnC"
             Grid.Row="1"
             Grid.Column="1"
+            Background="#B2FF0000"
+            BorderBrush="Black"
             Click="btnC_Click"
-            Content="C" />
+            Content="C"
+            FontSize="18" />
         <Button
             x:Name="BtnDel"
             Grid.Row="1"
             Grid.Column="2"
+            Background="#B2FF0000"
+            BorderBrush="Black"
             Click="btnDel_Click"
-            Content="DEL" />
+            Content="DEL"
+            FontSize="18" />
 
         <!--  Math Buttons  -->
         <Button
             x:Name="Btnpls"
             Grid.Row="4"
             Grid.Column="3"
+            Background="#B20000FF"
+            BorderBrush="Black"
             Click="btnPls_Click"
-            Content="+" />
+            Content="+"
+            FontSize="18" />
         <Button
             x:Name="BtnMin"
             Grid.Row="3"
             Grid.Column="3"
+            Background="#B20000FF"
+            BorderBrush="Black"
             Click="btnMin_Click"
-            Content="-" />
+            Content="-"
+            FontSize="18" />
         <Button
             x:Name="BtnMul"
             Grid.Row="2"
             Grid.Column="3"
+            Background="#B20000FD"
+            BorderBrush="Black"
             Click="btnMul_Click"
-            Content="*" />
+            Content="*"
+            FontSize="18" />
         <Button
             x:Name="BtnDiv"
             Grid.Row="1"
             Grid.Column="3"
+            Background="#B20000FF"
+            BorderBrush="Black"
             Click="btnDiv_Click"
-            Content="/" />
+            Content="/"
+            FontSize="18" />
 
         <!--  Plus/Minus Button  -->
         <Button
@@ -139,15 +171,19 @@
             Grid.Row="5"
             Grid.Column="0"
             Click="btnPlsMin_Click"
-            Content="+/-" />
+            Content="+/-"
+            FontSize="18" />
 
         <!--  Calculate Button  -->
         <Button
             x:Name="BtnClc"
             Grid.Row="5"
             Grid.Column="3"
+            Background="#B200FF02"
+            BorderBrush="Black"
             Click="btnClc_Click"
-            Content="=" />
+            Content="="
+            FontSize="18" />
 
         <!--  Result Text Box  -->
         <TextBox
@@ -155,7 +191,6 @@
             Grid.Row="0"
             Grid.Column="0"
             Grid.ColumnSpan="4"
-            Height="60"
             VerticalAlignment="Bottom"
             FontSize="36"
             FontWeight="Bold"
@@ -164,6 +199,7 @@
             TextAlignment="Right">
             0
         </TextBox>
+
 
     </Grid>
 </Window>

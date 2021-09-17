@@ -28,6 +28,11 @@ namespace Calculator
     public MainWindow()
     {
       InitializeComponent();
+      num1 = 0;
+      num2 = 0;
+      operation = String.Empty;
+      txtBxResult.Text = num1.ToString();
+
     }
 
     private void btn0_Click(object sender, RoutedEventArgs e)
